@@ -1,0 +1,187 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+a, a:hover, a:visited {
+  color: #0071bc;
+}
+#map {
+  top:0;
+  height: 100vh;
+  width:100vw;
+}
+
+#map-container{
+  position:sticky;
+  top:0;
+}
+#mapInset {
+  bottom:50px;
+  right:30px;
+  height: 180px;
+  width:250px;
+  max-width:100%;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+#virus_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#header {
+ 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height:100vh;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+#header h1, #header h2{
+  margin: 0;
+  padding: 2vh 2vw;
+  text-align: center;
+}
+#header h2{
+  font-size: 25;
+  color: #fafafa;
+}
+#header p {
+  margin: 0;
+  padding: 2vh 2vw;
+  text-align: center;
+}
+#footer {
+  width: 100%;
+  min-height: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  line-height: 25px;
+  font-size: 13px;
+  position: relative;
+  z-index: 5;
+}
+#features {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.hidden {
+  visibility: hidden;
+}
+.centered {
+  width: 50vw;
+  margin: 0 auto;
+}
+.lefty {
+  width: 33vw;
+  margin-left: 5vw;
+}
+.righty {
+  width: 33vw;
+  margin-left: 62vw;
+}
+.fully {
+  width: 100%;
+  margin: auto;
+}
+.light {
+  color: #444;
+  background-color: #fafafa;
+}
+.dark {
+  color: #fafafa;
+  background-color: #444;
+  z-index: 5;
+}
+.step {
+  padding-bottom: 50vh;
+  /* margin-bottom: 10vh; */
+  opacity: 0.25;
+}
+.step.active {
+  opacity: 0.9;
+}
+
+.step div {
+  padding:  25px 50px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.step img {
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .centered, .lefty, .righty, .fully {
+      width: 90vw;
+      margin: 0 auto;
+  }
+}
+
+#hero__inner {
+  z-index: 3;
+  text-align: center;
+  position: relative;
+  top: 300px;
+  margin:0 auto;
+  color: #fafafa;
+  
+}
+
+
+
+#hero__inner h2 {
+  font-family: 'Averta', Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 16px 0;
+}
+
+
+.centered {
+  width: 55vw;
+  margin: 0 auto;
+  
+}
+
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:2;
+    height: 100vh;
+    width:100vw;
+    content: "";
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+#video {
+  filter: brightness(40%) blur(3px);
+}
+
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+  touch-action: unset;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }

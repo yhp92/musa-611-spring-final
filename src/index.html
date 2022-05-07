@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>West Nile Virus Visualisation</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <link href='./css/story.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <script src="../data/sanitation.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+    <video muted id="video" width="770" height="882" autoplay="autoplay">
+        <source src="../assets/mosquito.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__inner centered" id='hero__inner'>
+        <p>
+          Public health & geospatial data / Chicago
+        </p>
+        <h2>
+          West Nile Virus Surveillance and Control: Mosquitoes, Traps and sanitation
+        </h2>
+        <p> by Hanpu Yao<br>
+          Presented on 4 May 2022
+        </p>
+    </div>
+</div>
+
+
+
+<div id="map-container">
+    <div id="map"></div>
+    <div id="mapInset"></div>
+
+</div>
+
+<div id="story"></div>
+
+<script src="./js/config.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>
