@@ -12,7 +12,7 @@ let config = {
   title: 'Brief introduction of West Nile Virus',
   subtitle: '',
   byline: 'West Nile virus (WNV) is a single-stranded RNA virus that causes West Nile fever, that often breaks out in tropical and temperate regions. It primarily infects birds, but it also infects humans, horses, cats, skunks, squirrels, and domestic rabbits. It is most spread to people by the bite of an infected mosquito.',
-  image: "./images/WNVcycle.jpeg",
+  image: "src/images/WNVcycle.jpeg",
   footer: 'Source: Data powered by <a href="https://data.cityofchicago.org/Health-Human-Services/West-Nile-Virus-WNV-Mosquito-Test-Results/jqe8-8r6s" target="_blank">Chicago data portal</a> <br> Created using <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>. and <a href="http://turfjs.org/" target="_blank">Turf.js</a>.',
   chapters: [
     {

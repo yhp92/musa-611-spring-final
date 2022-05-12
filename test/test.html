@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Mapbox Storytelling</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <link href='test.css' rel='stylesheet' />
+
+</head>
+<body>
+
+
+<div class="container">
+  <video id="video" width="770" height="882" onclick="play();">
+      <source src="../assets/mosquito.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay">
+      <p>Content above your video</p>
+      <form>
+          <p>Content Below Your Video</p>
+          <label for="input">Form Input Label</label>
+          <input id="input" name="input" value="" />
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
