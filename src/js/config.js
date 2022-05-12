@@ -87,7 +87,7 @@ let config = {
       alignment: 'left',
       hidden: false,
       title: 'Traps',
-      image: './images/BG-Sentinel2_Entomologist.jpeg',
+      image: 'src/images/BG-Sentinel2_Entomologist.jpeg',
       description: 'CDPH places up to 83 traps throughout the city and tests mosquito samples every week. This information guides CDPH’s efforts throughout the season, allowing teams to respond quickly in specific geographic areas to further reduce risks through neighborhood outreach and spraying.',
       location: {
         center: [-87.69513, 41.86336],
@@ -235,7 +235,7 @@ let config = {
       alignment: 'right',
       hidden: false,
       title: 'CPHD mosquitoes control',
-      image: './images/spray.jpeg',
+      image: 'src/images/spray.jpeg',
       description: 'Based on results from its citywide mosquito surveillance program, CDPH has determined the need to spray to kill adult mosquitoes in these communities from 2011 to 2013 (This is all the data I have.). The spray is not harmful to people or pets and is routinely sprayed in residential areas across the nation.',
       location: {
         center: [-58.54195, -34.71600],
